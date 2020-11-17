@@ -9,7 +9,9 @@ var config = {
             'Magento_Checkout/template/payment-methods/list.html':
                 'Durablecode_OnestepCheckout/template/payment-methods/list.html',
             'Magento_Checkout/template/form/element/email.html':
-                'Durablecode_OnestepCheckout/template/form/element/email.html'
+                'Durablecode_OnestepCheckout/template/form/element/email.html',
+            'Magento_SalesRule/template/payment/discount.html':
+                'Durablecode_OnestepCheckout/template/discount.html'
         }
     },
     config: {
