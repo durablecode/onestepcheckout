@@ -1,0 +1,46 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!-- ko foreach: getRegion('authentication') -->
+<!-- ko template: getTemplate() --><!-- /ko -->
+<!--/ko-->
+
+<!-- ko foreach: getRegion('progressBar') -->
+<!-- ko template: getTemplate() --><!-- /ko -->
+<!--/ko-->
+
+<!-- ko foreach: getRegion('estimation') -->
+<!-- ko template: getTemplate() --><!-- /ko -->
+<!--/ko-->
+
+<!-- ko foreach: getRegion('messages') -->
+<!-- ko template: getTemplate() --><!-- /ko -->
+<!--/ko-->
+<div class="opc-wrapper">
+    <ol class="opc" id="checkoutSteps">
+        <div id="dc-left-section" class="dc-section">
+            <!-- ko foreach: getComponentsByAreaName('left') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div>
+
+        <div id="dc-middle-section" class="dc-section">
+            <!-- ko foreach: getComponentsByAreaName('middle') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div>
+
+        <div id="dc-right-section" class="dc-section">
+            <!-- ko foreach: getComponentsByAreaName('right') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div>
+    </ol>
+</div>
+
+<!-- ko foreach: getRegion('sidebar') -->
+<!-- ko template: getTemplate() --><!-- /ko -->
+<!--/ko-->
