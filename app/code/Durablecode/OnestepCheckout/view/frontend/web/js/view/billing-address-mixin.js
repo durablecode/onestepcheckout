@@ -2,16 +2,23 @@
 define([
     'ko',
     'Magento_Checkout/js/model/quote',
-    'Magento_Checkout/js/action/set-billing-address'
+    'Magento_Checkout/js/action/set-billing-address',
+    'Magento_Customer/js/model/customer/address'
 ], function (
     ko,
     quote,
-    setBillingAddress
+    setBillingAddress,
+    customerAddress
 ) {
     'use strict';
 
     return function (Component) {
         return Component.extend({
+            /**
+             * Get addresses from customer
+             */
+            adresses: window.checkoutConfig.customerData.addresses,
+
             /**
              * @inheritdoc
              */
@@ -26,6 +33,17 @@ define([
                 this._super();
                 setBillingAddress();
             },
+
+            /**
+             * @inheritdoc
+             */
+            initObservable: function () {
+                if(customer.isLoggedIn()) {
+                    quote.shippingAddress(customerAddress(this.adresses[1]));
+                }
+
+                return this._super();
+            }
         });
     };
 });
