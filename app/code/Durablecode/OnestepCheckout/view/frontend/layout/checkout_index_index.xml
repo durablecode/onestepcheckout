@@ -42,7 +42,18 @@
                                                     </item>
                                                 </item>
                                             </item>
-                                            
+
+                                            <item name="dc-customer-email" xsi:type="array">
+                                                <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/form/element/email</item>
+                                                <item name="displayArea" xsi:type="string">customer-email</item>
+                                                <item name="tooltip" xsi:type="array">
+                                                    <item name="description" xsi:type="string" translate="true">We'll send your order confirmation here.</item>
+                                                </item>
+                                                <item name="config" xsi:type="array">
+                                                    <item name="area" xsi:type="string">left</item>
+                                                </item>
+                                            </item>
+
                                             <item name="dc-discount" xsi:type="array">
                                                 <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/discount</item>
                                                 <item name="config" xsi:type="array">
