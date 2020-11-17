@@ -8,12 +8,15 @@ var config = {
     },
     config: {
         mixins: {
+            'Magento_Checkout/js/view/billing-address': {
+                'Durablecode_OnestepCheckout/js/view/billing-address-mixin': true
+            },
             'Magento_Ui/js/form/element/abstract': {
                 'Durablecode_OnestepCheckout/js/form/element/abstract-mixin': true
             },
-            'Magento_Checkout/js/view/shipping': {
-                'Durablecode_OnestepCheckout/js/view/shipping-mixin': true
-            },
+            'Magento_Checkout/js/view/shipping-address/address-renderer/default': {
+                'Durablecode_OnestepCheckout/js/view/shipping-address/address-renderer/default-mixin': true
+            }
         }
     }
 };
