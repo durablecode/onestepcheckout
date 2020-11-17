@@ -11,7 +11,9 @@ var config = {
             'Magento_Checkout/template/form/element/email.html':
                 'Durablecode_OnestepCheckout/template/form/element/email.html',
             'Magento_SalesRule/template/payment/discount.html':
-                'Durablecode_OnestepCheckout/template/discount.html'
+                'Durablecode_OnestepCheckout/template/discount.html',
+            'ui/template/form/element/input.html':
+                'Durablecode_OnestepCheckout/templates/form/element/input.html'
         }
     },
     config: {
@@ -21,7 +23,10 @@ var config = {
             },
             'Magento_Checkout/js/view/shipping-address/address-renderer/default': {
                 'Durablecode_OnestepCheckout/js/view/shipping-address/address-renderer/default-mixin': true
-            }
+            },
+            'Magento_Customer/js/action/check-email-availability': {
+                'Durablecode_OnestepCheckout/js/action/check-email-availability-mixin': true
+            },
         }
     }
 };
