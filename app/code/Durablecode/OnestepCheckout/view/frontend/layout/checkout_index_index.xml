@@ -19,6 +19,11 @@
 
                                     <item name="steps" xsi:type="array">
                                         <item name="children" xsi:type="array">
+                                            <item name="billing-step" xsi:type="array">
+                                                <item name="config" xsi:type="array">
+                                                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                                                </item>
+                                            </item>
                                             <item name="shipping-step" xsi:type="array">
                                                 <item name="children" xsi:type="array">
                                                     <item name="shippingAddress" xsi:type="array">
