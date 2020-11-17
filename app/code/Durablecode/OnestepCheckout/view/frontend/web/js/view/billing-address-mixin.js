@@ -3,12 +3,14 @@ define([
     'ko',
     'Magento_Checkout/js/model/quote',
     'Magento_Checkout/js/action/set-billing-address',
-    'Magento_Customer/js/model/customer/address'
+    'Magento_Customer/js/model/customer/address',
+    'Magento_Customer/js/model/customer'
 ], function (
     ko,
     quote,
     setBillingAddress,
-    customerAddress
+    customerAddress,
+    customer
 ) {
     'use strict';
 
