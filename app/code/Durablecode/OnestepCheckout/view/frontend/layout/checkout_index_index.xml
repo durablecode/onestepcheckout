@@ -25,6 +25,9 @@
                                                 </item>
                                             </item>
                                             <item name="shipping-step" xsi:type="array">
+                                                <item name="config" xsi:type="array">
+                                                    <item name="area" xsi:type="string">right</item>
+                                                </item>
                                                 <item name="children" xsi:type="array">
                                                     <item name="shippingAddress" xsi:type="array">
                                                         <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/shipping</item>
