@@ -26,7 +26,7 @@
                                             </item>
 
                                             <item name="dc-billing-address" xsi:type="array">
-                                                <item name="component" xsi:type="string">Magento_Checkout/js/view/billing-address</item>
+                                                <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/billing-address</item>
                                                 <item name="sortOrder" xsi:type="string">1</item>
                                                 <item name="provider" xsi:type="string">checkoutProvider</item>
                                                 <item name="dataScopePrefix" xsi:type="string">billingAddress</item>
@@ -40,6 +40,52 @@
                                                         <item name="children" xsi:type="array">
                                                         </item>
                                                     </item>
+                                                </item>
+                                            </item>
+
+                                            <item name="dc-customer-email" xsi:type="array">
+                                                <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/form/element/email</item>
+                                                <item name="displayArea" xsi:type="string">customer-email</item>
+                                                <item name="tooltip" xsi:type="array">
+                                                    <item name="description" xsi:type="string" translate="true">We'll send your order confirmation here.</item>
+                                                </item>
+                                                <item name="config" xsi:type="array">
+                                                    <item name="area" xsi:type="string">left</item>
+                                                </item>
+                                            </item>
+
+                                            <item name="dc-discount" xsi:type="array">
+                                                <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/discount</item>
+                                                <item name="config" xsi:type="array">
+                                                    <item name="area" xsi:type="string">left</item>
+                                                </item>
+                                                <item name="children" xsi:type="array">
+                                                    <item name="errors" xsi:type="array">
+                                                        <item name="sortOrder" xsi:type="string">0</item>
+                                                        <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/discount-messages</item>
+                                                        <item name="displayArea" xsi:type="string">messages</item>
+                                                    </item>
+                                                    <item name="captcha" xsi:type="array">
+                                                        <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/captcha</item>
+                                                        <item name="displayArea" xsi:type="string">captcha</item>
+                                                        <item name="formId" xsi:type="string">sales_rule_coupon_request</item>
+                                                        <item name="configSource" xsi:type="string">checkoutConfig</item>
+                                                    </item>
+                                                </item>
+                                            </item>
+
+                                            <item name="dc-place-order" xsi:type="array">
+                                                <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/submit</item>
+                                                <item name="config" xsi:type="array">
+                                                    <item name="area" xsi:type="string">middle</item>
+                                                </item>
+                                            </item>
+
+                                            <item name="dc-shipping-methods" xsi:type="array">
+                                                <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/shipping/methods</item>
+                                                <item name="sortOrder" xsi:type="string">1</item>
+                                                <item name="config" xsi:type="array">
+                                                    <item name="area" xsi:type="string">middle</item>
                                                 </item>
                                             </item>
 
