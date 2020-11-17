@@ -1,10 +1,12 @@
 
 define([
     'ko',
-    'Magento_Checkout/js/model/quote'
+    'Magento_Checkout/js/model/quote',
+    'Magento_Checkout/js/action/set-billing-address'
 ], function (
     ko,
-    quote
+    quote,
+    setBillingAddress
 ) {
     'use strict';
 
@@ -16,6 +18,14 @@ define([
             canUseShippingAddress: ko.computed(function () {
                 return quote.shippingAddress() && quote.shippingAddress().canUseForBilling();
             }),
+
+            /**
+             * @inheritdoc
+             */
+            updateAddress: function () {
+                this._super();
+                setBillingAddress();
+            },
         });
     };
 });
