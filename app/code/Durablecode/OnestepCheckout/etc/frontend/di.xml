@@ -5,4 +5,12 @@
     <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
         <plugin name="prepare_data_for_components" type="Durablecode\OnestepCheckout\Plugin\Block\Checkout\LayoutProcessor" />
     </type>
+
+    <type name="Magento\Checkout\Block\Checkout\AttributeMerger">
+        <plugin name="change_component_street_field" type="Durablecode\OnestepCheckout\Plugin\Block\Checkout\Attribute\Street" />
+    </type>
+
+    <type name="Magento\Directory\Model\ResourceModel\Region\Collection">
+        <plugin name="add_code_id_to_collection" type="Durablecode\OnestepCheckout\Plugin\Model\ResourceModel\Region\Collection" />
+    </type>
 </config>
