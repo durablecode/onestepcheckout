@@ -1,0 +1,21 @@
+{
+  "name": "durablecode/module-durablecode-onestepcheckout",
+  "description": "It's a module which customizing checkout to one page view",
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "~7.1.3||~7.2.0||~7.3.0"
+  },
+  "type": "magento2-module",
+  "license": [],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Durablecode\\OnestepCheckout\\": ""
+    }
+  },
+  "version": "1.0.0"
+}
