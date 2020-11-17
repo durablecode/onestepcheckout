@@ -16,6 +16,24 @@
                                             <item name="componentDisabled" xsi:type="boolean">true</item>
                                         </item>
                                     </item>
+
+                                    <item name="steps" xsi:type="array">
+                                        <item name="children" xsi:type="array">
+                                            <item name="shipping-step" xsi:type="array">
+                                                <item name="children" xsi:type="array">
+                                                    <item name="shippingAddress" xsi:type="array">
+                                                        <item name="children" xsi:type="array">
+                                                            <item name="customer-email" xsi:type="array">
+                                                                <item name="config" xsi:type="array">
+                                                                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
                                 </item>
                             </item>
                         </item>
