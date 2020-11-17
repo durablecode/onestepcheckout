@@ -11,6 +11,9 @@ var config = {
             'Magento_Ui/js/form/element/abstract': {
                 'Durablecode_OnestepCheckout/js/form/element/abstract-mixin': true
             },
+            'Magento_Checkout/js/view/shipping': {
+                'Durablecode_OnestepCheckout/js/view/shipping-mixin': true
+            },
         }
     }
 };
