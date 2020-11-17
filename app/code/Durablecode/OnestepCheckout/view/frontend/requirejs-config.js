@@ -5,7 +5,9 @@ var config = {
             'Magento_Checkout/template/onepage.html':
                 'Durablecode_OnestepCheckout/template/onepage.html',
             'Magento_Checkout/template/billing-address.html':
-                'Durablecode_OnestepCheckout/template/billing-address/address.html'
+                'Durablecode_OnestepCheckout/template/billing-address/address.html',
+            'Magento_Checkout/template/payment-methods/list.html':
+                'Durablecode_OnestepCheckout/template/payment-methods/list.html',
         }
     },
     config: {
