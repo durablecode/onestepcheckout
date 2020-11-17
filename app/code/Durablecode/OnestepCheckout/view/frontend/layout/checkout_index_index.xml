@@ -59,6 +59,38 @@
                                                                     <item name="componentDisabled" xsi:type="boolean">true</item>
                                                                 </item>
                                                             </item>
+
+                                                            <item name="shipping-address-fieldset" xsi:type="array">
+                                                                <item name="children" xsi:type="array">
+                                                                    <item name="country_id" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/form/element/country</item>
+                                                                    </item>
+
+                                                                    <item name="firstname" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/form/element/inputField</item>
+                                                                    </item>
+
+                                                                    <item name="lastname" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/form/element/inputField</item>
+                                                                    </item>
+
+                                                                    <item name="city" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/form/element/inputField</item>
+                                                                    </item>
+
+                                                                    <item name="telephone" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/form/element/inputField</item>
+                                                                    </item>
+
+                                                                    <item name="postcode" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/form/element/post-code</item>
+                                                                    </item>
+
+                                                                    <item name="region_id" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/form/element/region</item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
                                                         </item>
                                                     </item>
                                                 </item>
