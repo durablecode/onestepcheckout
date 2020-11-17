@@ -26,7 +26,7 @@
                                             </item>
 
                                             <item name="dc-billing-address" xsi:type="array">
-                                                <item name="component" xsi:type="string">Magento_Checkout/js/view/billing-address</item>
+                                                <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/billing-address</item>
                                                 <item name="sortOrder" xsi:type="string">1</item>
                                                 <item name="provider" xsi:type="string">checkoutProvider</item>
                                                 <item name="dataScopePrefix" xsi:type="string">billingAddress</item>
