@@ -10,6 +10,13 @@
                         <item name="components" xsi:type="array">
                             <item name="checkout" xsi:type="array">
                                 <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/onepage</item>
+                                <item name="children" xsi:type="array">
+                                    <item name="sidebar" xsi:type="array">
+                                        <item name="config" xsi:type="array">
+                                            <item name="componentDisabled" xsi:type="boolean">true</item>
+                                        </item>
+                                    </item>
+                                </item>
                             </item>
                         </item>
                     </argument>
