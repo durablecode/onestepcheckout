@@ -22,6 +22,10 @@
                                             <item name="shipping-step" xsi:type="array">
                                                 <item name="children" xsi:type="array">
                                                     <item name="shippingAddress" xsi:type="array">
+                                                        <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/shipping</item>
+                                                        <item name="config" xsi:type="array">
+                                                            <item name="template" xsi:type="string">Durablecode_OnestepCheckout/shipping/address</item>
+                                                        </item>
                                                         <item name="children" xsi:type="array">
                                                             <item name="customer-email" xsi:type="array">
                                                                 <item name="config" xsi:type="array">
