@@ -21,11 +21,11 @@ class Collection
     public function afterToOptionArray(RegionCollection $collection, array $options): array
     {
         $items = $collection->getData();
-        $arr = array_combine(array_column($items,'region_id'), array_column($items, 'code'));
+        $data = array_combine(array_column($items,'region_id'), array_column($items, 'code'));
 
-        foreach($options as $index2 => &$option) {
+        foreach($options as $index => &$option) {
             if(!empty($option['value'])) {
-                $option['code_id'] = $arr[$option['value']];
+                $option['code_id'] = $data[$option['value']];
             }
         }
 
