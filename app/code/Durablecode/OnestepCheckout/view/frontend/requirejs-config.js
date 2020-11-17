@@ -4,6 +4,8 @@ var config = {
         '*': {
             'Magento_Checkout/template/onepage.html':
                 'Durablecode_OnestepCheckout/template/onepage.html',
+            'Magento_Checkout/template/billing-address.html':
+                'Durablecode_OnestepCheckout/template/billing-address/address.html'
         }
     },
     config: {
