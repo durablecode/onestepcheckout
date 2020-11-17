@@ -74,6 +74,13 @@
                                                 </item>
                                             </item>
 
+                                            <item name="dc-place-order" xsi:type="array">
+                                                <item name="component" xsi:type="string">Durablecode_OnestepCheckout/js/view/submit</item>
+                                                <item name="config" xsi:type="array">
+                                                    <item name="area" xsi:type="string">middle</item>
+                                                </item>
+                                            </item>
+
                                             <item name="shipping-step" xsi:type="array">
                                                 <item name="config" xsi:type="array">
                                                     <item name="area" xsi:type="string">right</item>
